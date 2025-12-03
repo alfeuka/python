@@ -1,3 +1,4 @@
+#Задание 1
 number = int(input("Введите целое число: "))
 if number < 0:
     number = abs(number)
