@@ -15,7 +15,7 @@ if '.' in text or ',' in text:
 else:
     print(False)
   #Задание 3
-  num1 = int(input("Введите первое целое число: "))
+num1 = int(input("Введите первое целое число: "))
 num2 = int(input("Введите второе целое число: "))
 divisible1 = num1 % 3 == 0
 divisible2 = num2 % 3 == 0
@@ -73,7 +73,7 @@ elif extension == 'txt':
 else:
     print("Неизвестное расширение")
 
-#Задание 3
+# Задание 3
 a = float(input("Введите первую сторону треугольника: "))
 b = float(input("Введите вторую сторону треугольника: "))
 c = float(input("Введите третью сторону треугольника: "))
