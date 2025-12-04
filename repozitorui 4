@@ -25,6 +25,7 @@ elif divisible1 or divisible2:
     print("Одно число делится на 3")
 else:
     print(False)
+
 # В2 Задание 1
 num = int(input("Введите число: "))
 if num > 00:
@@ -54,6 +55,7 @@ elif b == 255 and r == 0 and g == 0:
     print("Синий цвет")
 else:
     print("Нет цвета")
+
 #В3 Задание 1
 num = int(input("Введите число: "))
 if num <= 0:
@@ -84,3 +86,101 @@ elif a == b or a == c or b == c:
     print("Равнобедренный треугольник")
 else:
     print("Разносторонний треугольник")
+#В 4 Задание 1
+text = 'important information in one line'
+letter = input("Введите букву: ")
+print(letter.lower() in text.lower())
+
+# Задание 2
+side1 = float(input("Введите первую сторону: "))
+side2 = float(input("Введите вторую сторону: "))
+
+if side1 == side2:
+    print(f"Это квадрат с площадью {side1 * side2}")
+else:
+    print(f"Это прямоугольник с площадью {side1 * side2}")
+
+# Задание 3
+answer = input("Как твои дела? ").lower()
+
+if answer in ["хорошо", "нормально", "отлично"]:
+    print(":)")
+elif answer in ["плохо", "не хорошо", "..."]:
+    print(":( ")  
+    print(":|")
+
+#В 5 Задание 1
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+
+if num1 > num2:
+    result = num1 ** num2
+    print(f"{num1} в степени {num2} = {result}")
+elif num2 > num1:
+    result = num2 ** num1
+    print(f"{num2} в степени {num1} = {result}")
+else:
+    result = num1 + num2
+    print(f"Числа равны. Их сумма: {result}")
+
+# Задание 2
+new_message = "Hello! How are you?"
+
+my_response = input("Введите ваш ответ на сообщение: ")
+
+# Сравниваем первые символы (учитываем, что строка может быть пустой)
+if new_message and my_response:
+    print(new_message[0] == my_response[0])
+else:
+    print("Одна из строк пуста, сравнение невозможно")
+
+# Задание 3
+length1 = float(input("Введите длину первого отрезка: "))
+length2 = float(input("Введите длину второго отрезка: "))
+
+if length1 > length2:
+    difference = length1 - length2
+    print(f"Первый отрезок длиннее на {difference}")
+elif length2 > length1:
+    difference = length2 - length1
+    print(f"Второй отрезок длиннее на {difference}")
+else:
+    print("Отрезки равны по длине")
+
+#В 6 Задание 1
+user_string = input("Введите строку: ")
+
+if user_string:
+    print(user_string[0] == user_string[-1])
+else:
+    print("Строка пустая")
+
+# Задание 2
+number = float(input("Введите число: "))
+
+if number % 2 == 0:
+    result = number ** 2
+    print(f"Число кратно 2. {number}² = {result}")
+elif number % 3 == 0:
+    result = number ** 3
+    print(f"Число кратно 3. {number}³ = {result}")
+else:
+    result = number * 100
+    print(f"Число {number} × 100 = {result}")
+
+# Задание 3
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+
+if num1 < 0 and num2 < 0:
+    print(False)
+elif num1 < 0:
+    result1 = num1 + 1000
+    print(f"Первое число отрицательное: {num1} + 1000 = {result1}")
+    print(f"Второе число: {num2}")
+elif num2 < 0:
+    result2 = num2 + 1000
+    print(f"Первое число: {num1}")
+    print(f"Второе число отрицательное: {num2} + 1000 = {result2}")
+else:
+    print(True)
